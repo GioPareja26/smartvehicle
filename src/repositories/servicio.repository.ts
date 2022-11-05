@@ -12,9 +12,6 @@ export class ServicioRepository extends DefaultCrudRepository<
 
   public readonly asesors: HasManyRepositoryFactory<Asesor, typeof Servicio.prototype.id>;
 
-  asesor(id: string | undefined): import("../models").Asesor | PromiseLike<import("../models").Asesor> {
-    throw new Error('Method not implemented.');
-  }
   cliente(id: string | undefined): import("../models").Cliente | PromiseLike<import("../models").Cliente> {
     throw new Error('Method not implemented.');
   }

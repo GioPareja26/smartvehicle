@@ -42,7 +42,7 @@ export class AsesorServicioController {
     @param.path.string('id') id: string,
     @param.query.object('filter') filter?: Filter<Servicio>,
   ): Promise<Servicio[]> {
-    return this.asesorRepository.servicios({id}).find(filter);
+    return this.asesorRepository.servicios(id).find(filter);
   }
 
   @post('/asesors/{id}/servicios', {
